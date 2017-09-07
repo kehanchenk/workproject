@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wyyc.zqqworkproject.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/tv_hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <Button
+        android:id="@+id/btn_myview"
+        android:layout_below="@+id/tv_hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义view"/>
+
+    <Button
+        android:id="@+id/btn_bottom_view"
+        android:layout_toRightOf="@+id/btn_myview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底部弹出"/>
+
+
+
+    <Button
+        android:id="@+id/btn_soller"
+        android:layout_below="@+id/btn_myview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroller使用"/>
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_below="@+id/btn_soller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义view使用"/>
+
+    <Button
+        android:id="@+id/btn_dragview"
+        android:layout_below="@+id/btn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dragview使用"/>
+    <Button
+        android:id="@+id/btn_viewgroup"
+        android:layout_below="@+id/btn_dragview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义ViewGroup"/>
+    <Button
+        android:id="@+id/btn_recycleview"
+        android:layout_below="@+id/btn_viewgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义RecycleView"/>
+    <Button
+        android:id="@+id/btn_rxjava"
+        android:layout_below="@+id/btn_recycleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RxJava测试"/>
+    <Button
+        android:id="@+id/btn_dagger2"
+        android:layout_below="@+id/btn_rxjava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dagger2"/>
+
+    <Button
+        android:id="@+id/btn_mvp"
+        android:layout_below="@+id/btn_dagger2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mvp"/>
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_below="@+id/btn_mvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog"/>
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_view"
+        android:layout_toEndOf="@+id/btn_view"
+        android:text="不规则"/>
+
+    <Button
+        android:id="@+id/btn_colorview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_test"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/btn_viewgroup"
+        android:text="自定义view 颜色"/>
+</RelativeLayout>

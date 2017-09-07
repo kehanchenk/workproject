@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="text_flag_01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/flow_shape</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+
+    <!-- 对话框的样式 -->
+    <style name="float_base">
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- action-sheet 底部弹出菜单的样式 -->
+    <style name="action_sheet" parent="@style/float_base"></style>
+
+    <style name="action_sheet_animation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/action_sheet_enter</item>
+        <item name="android:windowExitAnimation">@anim/action_sheet_exit</item>
+    </style>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/text_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Text Wheel"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/arrow_down_one"
+            android:layout_width="18dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/nav_arrow_down"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/num_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="num_wheel"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/arrow_down_two"
+            android:layout_width="18dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/nav_arrow_down"/>
+    </LinearLayout>
+
+</LinearLayout>

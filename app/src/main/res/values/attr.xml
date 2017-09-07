@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--自定义属性-->
+    <declare-styleable name="CustemTextView">
+        <attr name="titleText" format="string"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="titleSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+
+        <attr name="imageText" format="string"/>
+        <attr name="imageTextSize" format="dimension"/>
+        <attr name="imageTextColor" format="color"/>
+        <attr name="image" format="reference"/>
+        <attr name="imageScaleType">
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="AnomalyButton">
+        <attr name="bgcolor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomProgress">
+        <attr name="progressFirstColor" format="color"/>
+        <attr name="progressSecondColor" format="color"/>
+        <attr name="progressSpeed" format="integer"/>
+        <attr name="progressovalWidth" format="dimension"/>
+
+    </declare-styleable>
+
+    <!--自定义音量-->
+    <declare-styleable name="CustomControlBar">
+        <attr name="barFirstColor" format="color"/>
+        <attr name="barSecondColor" format="color"/>
+        <attr name="bitmapSrc" format="reference"/>
+        <attr name="barsplitSize" format="integer"/>
+        <attr name="barCount" format="integer"/>
+        <attr name="barWidth" format="dimension"/>
+
+    </declare-styleable>
+
+
+    <!--圆形图像-->
+    <declare-styleable name="RoundImageView">
+
+        <attr name="roundRadius"/>
+        <attr name="type"/>
+
+    </declare-styleable>
+
+    <attr name="roundRadius" format="dimension"/>
+    <attr name="type">
+        <enum name="circle" value="0"/>
+        <enum name="round" value="1"/>
+    </attr>
+
+
+    <declare-styleable name="ChangeColorView">
+
+        <attr name="icon" format="reference"/>
+        <attr name="color" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="text_size" format="dimension"/>
+
+    </declare-styleable>
+
+
+</resources>

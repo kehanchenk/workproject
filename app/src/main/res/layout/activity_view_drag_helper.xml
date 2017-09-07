@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wyyc.myview.ViewDrawLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyyc.zqqworkproject.ViewDragHelperActivity">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#44ff0000"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="one"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#44ff0000"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="two"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#44ff0000"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="three"
+        />
+
+</com.wyyc.myview.ViewDrawLayout>

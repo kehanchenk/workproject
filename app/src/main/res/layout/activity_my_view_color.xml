@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyyc.zqqworkproject.MyViewColorActivity">
+
+
+    <!--<com.wyyc.myview.ColorView-->
+    <!--android:id="@+id/iv_colorview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--<com.wyyc.myview.RoundImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:src="@drawable/ic_round"-->
+    <!--app:roundRadius="10dp"-->
+    <!--app:type="circle"/>-->
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <com.wyyc.myview.ChangeColorView
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:color="@color/colorAccent"
+            app:icon="@drawable/tabs_home"
+            app:text="主页"
+            app:text_size="14sp"/>
+
+        <com.wyyc.myview.ChangeColorView
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:color="@color/colorAccent"
+
+            app:icon="@drawable/tabs_home"
+            app:text="主页"
+            app:text_size="14sp"/>
+
+        <com.wyyc.myview.ChangeColorView
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:color="@color/colorAccent"
+            app:icon="@drawable/tabs_home"
+            app:text="主页"
+            app:text_size="14sp"/>
+
+        <com.wyyc.myview.ChangeColorView
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:color="@color/colorAccent"
+            app:icon="@drawable/tabs_me"
+            app:text="主页"
+            app:text_size="14sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">个人项目</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="request_data">请求数据</string>
+    <string name="load">加载</string>
+    <string name="title_elementary">基本</string>
+    <string name="title_map">转换(map)</string>
+    <string name="title_zip">压合(zip)</string>
+    <string name="page_with_number">第%s页</string>
+    <string name="next_page">下一页</string>
+    <string name="previous_page">上一页</string>
+    <string name="unknow_date">未知日期</string>
+    <string name="responsed_data">返回的数据</string>
+    <string name="title_token">Token(flatMap)</string>
+    <string name="title_token_advanced">Token_高级(retryWhen)</string>
+    <string name="invalidate_token">销毁 token</string>
+    <string name="title_cache">缓存(BehaviorSubject)</string>
+    <string name="loading_time_and_source">耗时：%1$sms(从%2$s)</string>
+    <string name="data_source_memory">内存</string>
+    <string name="data_source_disk">磁盘</string>
+    <string name="data_source_network">网络</string>
+    <string name="question_mark">\?</string>
+    <string name="token_expired">token 已失效</string>
+    <string name="updated">已更新</string>
+    <string name="token_destroyed">token 已销毁</string>
+    <string name="clearMemoryCache">清空内存缓存</string>
+    <string name="clearMemoryAndDiskCache">清空内存和磁盘缓存</string>
+    <string name="memory_cache_cleared">内存缓存已清空</string>
+    <string name="memory_and_disk_cache_cleared">内存缓存和磁盘缓存都已清空</string>
+    <string name="get_data">获取到的数据： \nID: %1$d\n用户名：%2$s</string>
+    <string name="get_token_and_data">token：%1$s\n\n获取到的数据：\nID：%2$d \n用户名： %3$s</string>
+    <string name="loading_failed">数据加载失败</string>
+    <string name="dagger2">Dagger2测试</string>
+    <string name="mvp">mvp测试</string>
+    <string name="dialog">对话框</string>
+
+</resources>

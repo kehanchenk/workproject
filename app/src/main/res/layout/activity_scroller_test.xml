@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wyyc.myview.ScrollerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyyc.zqqworkproject.ScrollerTestActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:text="This is first child view"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="This is second child view"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="This is third child view"/>
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_scroller_to"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:text="to"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_scroller_by"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="150dp"-->
+        <!--android:text="by"-->
+        <!--/>-->
+
+</com.wyyc.myview.ScrollerLayout>
