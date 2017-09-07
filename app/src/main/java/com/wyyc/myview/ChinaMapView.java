@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.RectF;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -40,6 +41,12 @@ public class ChinaMapView extends View {
 
     private Paint mPaint;
 
+    private int minWidth;
+
+    private int minHeight;
+
+
+    private RectF mRectF;
     private ProviceItem selectItem;  //被选择的 省份
 
     private List<ProviceItem> mProviceItems;
@@ -54,6 +61,9 @@ public class ChinaMapView extends View {
             , "黑龙江", "湖南", "湖北", "吉林", "江苏", "江西", "辽宁", "香港特别行政区", "内蒙古", "宁夏回族自治区", "青海", "陕西", "四川", "山东", "上海"
             , "山西", "天津", "台湾", "新疆维吾尔族自治区", "西藏自治区", "云南", "浙江"};
     private float scale = 1.3f;
+    private int mViewwidth;
+    private int mViewheight;
+    private float mScale2;
 
 
     public ChinaMapView(Context context) {
@@ -71,6 +81,8 @@ public class ChinaMapView extends View {
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
+        minWidth = context.getResources().getDimensionPixelSize(R.dimen.map_min_width);
+        minHeight = context.getResources().getDimensionPixelSize(R.dimen.map_min_height);
 
         mThread.start();
 
@@ -82,6 +94,52 @@ public class ChinaMapView extends View {
                 return true;
             }
         });
+
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        int widthmode = MeasureSpec.getMode(widthMeasureSpec);
+        int widthsize = MeasureSpec.getSize(widthMeasureSpec);
+
+        int heightmode = MeasureSpec.getMode(heightMeasureSpec);
+        int heightsize = MeasureSpec.getSize(heightMeasureSpec);
+
+
+        mViewwidth = widthsize;
+        mViewheight = heightsize;
+
+        switch (widthmode) {
+            case MeasureSpec.EXACTLY:
+                mViewwidth = widthsize > minWidth ? widthsize : minWidth;
+                break;
+            case MeasureSpec.AT_MOST:
+            case MeasureSpec.UNSPECIFIED:
+                mViewwidth = minWidth;
+                break;
+        }
+
+        //得到参考高度
+        int computHeight = minHeight * mViewheight / minHeight;
+
+        switch (heightmode) {
+            //布局中写死了 dp
+            case MeasureSpec.EXACTLY:
+                mViewheight = heightsize;
+                break;
+            case MeasureSpec.AT_MOST:
+            case MeasureSpec.UNSPECIFIED:
+                //对照参考高度，取最大值
+                mViewheight = minHeight > computHeight ? minHeight : computHeight;
+                break;
+        }
+
+
+        setMeasuredDimension(MeasureSpec.makeMeasureSpec(mViewwidth, MeasureSpec.EXACTLY),
+                MeasureSpec.makeMeasureSpec(mViewheight, MeasureSpec.EXACTLY));
+
 
     }
 
@@ -155,6 +213,10 @@ public class ChinaMapView extends View {
                 Document document = builder.parse(stream);  //解析document
 
                 NodeList items = document.getElementsByTagName("path");
+                float left = -1;
+                float right = -1;
+                float top = -1;
+                float bottom = -1;
                 for (int i = 0; i < items.getLength(); i++) {
 
                     Element element = (Element) items.item(i);
@@ -163,11 +225,20 @@ public class ChinaMapView extends View {
 
                     Path path = PathParser.createPathFromPathData(pathData);
 
-                    ProviceItem proviceItem = new ProviceItem(path);
+                    RectF rectF = new RectF();
+                    path.computeBounds(rectF, true);
 
+                    left = left == -1 ? rectF.left : Math.min(rectF.left, left);
+                    top = top == -1 ? rectF.top : Math.min(rectF.top, top);
+
+                    right = right == -1 ? rectF.right : Math.max(rectF.right, right);
+                    bottom = bottom == -1 ? rectF.bottom : Math.max(rectF.bottom, bottom);
+
+                    ProviceItem proviceItem = new ProviceItem(path);
                     itemList.add(proviceItem);
 
                 }
+                mRectF = new RectF(left, top, right, bottom);
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -182,6 +253,11 @@ public class ChinaMapView extends View {
     Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
+
+            scale = mViewwidth / mRectF.width();
+            mScale2 = mViewheight / mRectF.height();
+
+            scale = Math.min(scale, mScale2);
 
             if (mProviceItems == null) {
                 return;

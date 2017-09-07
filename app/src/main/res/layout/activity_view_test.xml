@@ -17,8 +17,8 @@
     <com.wyyc.myview.ChinaMapView
         android:id="@+id/china"
         android:layout_marginTop="100dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
 
 
     <!--<com.wyyc.myview.CustomTextView-->
