@@ -125,7 +125,7 @@ public class ChinaMapView extends View {
         int computHeight = minHeight * mViewheight / minHeight;
 
         switch (heightmode) {
-            //布局中写死了 dp
+            //布局中写死了dp
             case MeasureSpec.EXACTLY:
                 mViewheight = heightsize;
                 break;
