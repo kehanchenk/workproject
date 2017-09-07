@@ -31,7 +31,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 /**
  * Created by zqq on 2017/9/6.
- * Description:  可交互式中国地图
+ * Description:  此次添加可交互式中国地图
  */
 
 public class ChinaMapView extends View {
