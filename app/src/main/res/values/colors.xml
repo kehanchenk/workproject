@@ -6,4 +6,6 @@
     <color name="tab_bg_pressed">#3D8CD3</color>
     <color name="kprogresshud_default_color">#b1000000</color>
     <color name="kprogresshud_grey_color">#449E9E9E</color>
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#90000000</color>
 </resources>

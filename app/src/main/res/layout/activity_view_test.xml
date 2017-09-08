@@ -9,16 +9,18 @@
 
     <TextView
         android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"/>
+        android:text="点击地图任意区域"
+        android:textSize="18sp"/>
 
     <com.wyyc.myview.ChinaMapView
         android:id="@+id/china"
-        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"/>
 
 
     <!--<com.wyyc.myview.CustomTextView-->

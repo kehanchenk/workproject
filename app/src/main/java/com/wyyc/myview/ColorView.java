@@ -63,6 +63,7 @@ public class ColorView extends View {
 
     }
 
+
     private void initPaint() {
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);

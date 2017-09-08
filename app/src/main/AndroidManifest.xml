@@ -51,6 +51,8 @@
         </activity>
         <activity android:name=".MyViewColorActivity">
         </activity>
+        <activity android:name=".TableViewActivity">
+        </activity>
     </application>
 
 </manifest>

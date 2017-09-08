@@ -46,6 +46,13 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         mNavView.setNavigationItemSelectedListener(this);
 
+        mBtnMyview.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return false;
+            }
+        });
+
 
         try {
             String versionName = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
@@ -67,7 +74,7 @@ public class MainActivity extends AppCompatActivity
 
     @OnClick({R.id.btn_myview, R.id.btn_soller, R.id.btn_view, R.id.btn_dragview, R.id.btn_viewgroup
             , R.id.btn_recycleview, R.id.btn_rxjava, R.id.btn_dagger2, R.id.btn_mvp, R.id.btn_dialog, R.id.btn_bottom_view, R.id.btn_test
-            , R.id.btn_colorview})
+            , R.id.btn_colorview,R.id.btn_tableview})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_myview:
@@ -109,7 +116,16 @@ public class MainActivity extends AppCompatActivity
             case R.id.btn_colorview:
                 startActivity(new Intent(MainActivity.this, MyViewColorActivity.class));
                 break;
+            case R.id.btn_tableview:
+                startActivity(new Intent(MainActivity.this, TableViewActivity.class));
+                break;
+
         }
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return super.onTouchEvent(event);
     }
 
     @Override

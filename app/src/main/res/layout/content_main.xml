@@ -42,7 +42,7 @@
         android:layout_below="@+id/btn_soller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自定义view使用"/>
+        android:text="交互式中国地图"/>
 
     <Button
         android:id="@+id/btn_dragview"
@@ -105,4 +105,13 @@
         android:layout_marginTop="12dp"
         android:layout_toEndOf="@+id/btn_viewgroup"
         android:text="自定义view 颜色"/>
+
+    <Button
+        android:id="@+id/btn_tableview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_recycleview"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/btn_recycleview"
+        android:text="列表布局"/>
 </RelativeLayout>
