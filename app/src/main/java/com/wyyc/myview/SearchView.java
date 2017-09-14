@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
@@ -35,6 +37,11 @@ public class SearchView extends View {
 
     public SearchView(Context context) {
         super(context);
+        init();
+    }
+
+    public SearchView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
         init();
     }
 
@@ -82,6 +89,7 @@ public class SearchView extends View {
         mLinePath.moveTo(mCenterX + 80, mCenterY);
         mLinePath.lineTo(mCenterX + 200, mCenterY);
 
+        //绘制的第二部分的圆
         mCirclePath.addCircle(mCenterX, mCenterY, 200, Path.Direction.CW);
 
         //将路径添加至measure

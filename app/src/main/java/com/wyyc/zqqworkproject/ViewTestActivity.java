@@ -5,13 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.wyyc.myview.ChinaMapView;
-import com.wyyc.myview.LoadingView;
-import com.wyyc.myview.SearchView;
 
 public class ViewTestActivity extends AppCompatActivity {
 
-    private LoadingView mView;
-    private SearchView mSearchView ;
+
 
     private TextView mTextView;
 
@@ -33,11 +30,7 @@ public class ViewTestActivity extends AppCompatActivity {
             }
         });
 
-//        setContentView(new MyWaveView(this));
-//        mView = new LoadingView(this);
-//        mSearchView = new SearchView(this);
-//        setContentView(mSearchView);
-//        mSearchView.startAnim();
+
     }
 
 }

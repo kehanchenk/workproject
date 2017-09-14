@@ -7,6 +7,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
@@ -29,6 +31,11 @@ public class LoadingView extends View {
 
     public LoadingView(Context context) {
         super(context);
+        init();
+    }
+
+    public LoadingView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
         init();
     }
 
