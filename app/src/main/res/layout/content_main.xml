@@ -103,8 +103,16 @@
         android:id="@+id/btn_tableview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_recycleview"
-        android:layout_marginBottom="14dp"
+        android:text="列表布局"
+        android:layout_below="@+id/btn_colorview"
+        android:layout_toEndOf="@+id/btn_recycleview"/>
+
+    <Button
+        android:id="@+id/btn_taobao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_tableview"
+        android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/btn_recycleview"
-        android:text="列表布局"/>
+        android:text="淘宝动画"/>
 </RelativeLayout>

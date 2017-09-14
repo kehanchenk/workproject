@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyyc.zqqworkproject.TaoBaoActivity">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/icon2"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="显示"
+            android:background="#f00"
+            android:onClick="startFirstAnim"/>
+    </LinearLayout>
+    <ImageView
+        android:orientation="vertical"
+        android:id="@+id/second"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon1"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:onClick="startSecondAnim"
+        android:visibility="invisible"
+        android:clickable="true"
+        />
+
+</RelativeLayout>

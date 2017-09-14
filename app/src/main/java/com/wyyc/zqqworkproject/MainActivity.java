@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity
 
     @OnClick({R.id.btn_myview, R.id.btn_soller, R.id.btn_view, R.id.btn_dragview, R.id.btn_viewgroup
             , R.id.btn_recycleview, R.id.btn_rxjava, R.id.btn_dagger2, R.id.btn_mvp, R.id.btn_dialog, R.id.btn_bottom_view, R.id.btn_test
-            , R.id.btn_colorview,R.id.btn_tableview})
+            , R.id.btn_colorview, R.id.btn_tableview, R.id.btn_taobao})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_myview:
@@ -119,7 +119,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.btn_tableview:
                 startActivity(new Intent(MainActivity.this, TableViewActivity.class));
                 break;
-
+            case R.id.btn_taobao:
+                startActivity(new Intent(MainActivity.this, TaoBaoActivity.class));
+                break;
         }
     }
 

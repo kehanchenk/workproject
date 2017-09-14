@@ -53,6 +53,8 @@
         </activity>
         <activity android:name=".TableViewActivity">
         </activity>
+        <activity android:name=".TaoBaoActivity">
+        </activity>
     </application>
 
 </manifest>
