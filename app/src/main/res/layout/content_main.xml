@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,74 +12,78 @@
         android:id="@+id/btn_myview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自定义view"/>
+        android:text="自定义view" />
 
     <Button
         android:id="@+id/btn_bottom_view"
-        android:layout_toRightOf="@+id/btn_myview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="底部弹出"/>
-
+        android:layout_toRightOf="@+id/btn_myview"
+        android:text="底部弹出" />
 
 
     <Button
         android:id="@+id/btn_soller"
-        android:layout_below="@+id/btn_myview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scroller使用"/>
+        android:layout_below="@+id/btn_myview"
+        android:text="Scroller使用" />
+
     <Button
         android:id="@+id/btn_view"
-        android:layout_below="@+id/btn_soller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="交互式中国地图"/>
+        android:layout_below="@+id/btn_soller"
+        android:text="交互式中国地图" />
 
     <Button
         android:id="@+id/btn_dragview"
-        android:layout_below="@+id/btn_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dragview使用"/>
+        android:layout_below="@+id/btn_view"
+        android:text="dragview使用" />
+
     <Button
         android:id="@+id/btn_viewgroup"
-        android:layout_below="@+id/btn_dragview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自定义ViewGroup"/>
+        android:layout_below="@+id/btn_dragview"
+        android:text="自定义ViewGroup" />
+
     <Button
         android:id="@+id/btn_recycleview"
-        android:layout_below="@+id/btn_viewgroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自定义RecycleView"/>
+        android:layout_below="@+id/btn_viewgroup"
+        android:text="自定义RecycleView" />
+
     <Button
         android:id="@+id/btn_rxjava"
-        android:layout_below="@+id/btn_recycleview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RxJava测试"/>
+        android:layout_below="@+id/btn_recycleview"
+        android:text="RxJava测试" />
+
     <Button
         android:id="@+id/btn_dagger2"
-        android:layout_below="@+id/btn_rxjava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dagger2"/>
+        android:layout_below="@+id/btn_rxjava"
+        android:text="@string/dagger2" />
 
     <Button
         android:id="@+id/btn_mvp"
-        android:layout_below="@+id/btn_dagger2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mvp"/>
+        android:layout_below="@+id/btn_dagger2"
+        android:text="@string/mvp" />
 
     <Button
         android:id="@+id/btn_dialog"
-        android:layout_below="@+id/btn_mvp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dialog"/>
+        android:layout_below="@+id/btn_mvp"
+        android:text="@string/dialog" />
 
     <Button
         android:id="@+id/btn_test"
@@ -88,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/btn_view"
         android:layout_toEndOf="@+id/btn_view"
-        android:text="不规则"/>
+        android:text="不规则" />
 
     <Button
         android:id="@+id/btn_colorview"
@@ -97,15 +100,15 @@
         android:layout_below="@+id/btn_test"
         android:layout_marginTop="12dp"
         android:layout_toEndOf="@+id/btn_viewgroup"
-        android:text="自定义view 颜色"/>
+        android:text="自定义view 颜色" />
 
     <Button
         android:id="@+id/btn_tableview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="列表布局"
         android:layout_below="@+id/btn_colorview"
-        android:layout_toEndOf="@+id/btn_recycleview"/>
+        android:layout_toEndOf="@+id/btn_recycleview"
+        android:text="列表布局" />
 
     <Button
         android:id="@+id/btn_taobao"
@@ -114,5 +117,14 @@
         android:layout_below="@+id/btn_tableview"
         android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/btn_recycleview"
-        android:text="淘宝动画"/>
+        android:text="淘宝动画" />
+
+    <Button
+        android:id="@+id/btn_launght"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_taobao"
+        android:layout_marginStart="12dp"
+        android:layout_alignRight="@+id/btn_taobao"
+        android:text="启动动画" />
 </RelativeLayout>
