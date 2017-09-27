@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity
 
     @OnClick({R.id.btn_myview, R.id.btn_soller, R.id.btn_view, R.id.btn_dragview, R.id.btn_viewgroup
             , R.id.btn_recycleview, R.id.btn_rxjava, R.id.btn_dagger2, R.id.btn_mvp, R.id.btn_dialog, R.id.btn_bottom_view, R.id.btn_test
-            , R.id.btn_colorview, R.id.btn_tableview, R.id.btn_taobao,R.id.btn_launght})
+            , R.id.btn_colorview, R.id.btn_tableview, R.id.btn_taobao, R.id.btn_launght, R.id.btn_animframe})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_myview:
@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.btn_launght:
                 startActivity(new Intent(MainActivity.this, SplashViewActivity.class));
+                break;
+            case R.id.btn_animframe:
+                startActivity(new Intent(MainActivity.this, AnimFrameLayoutActivity.class));
                 break;
 
         }

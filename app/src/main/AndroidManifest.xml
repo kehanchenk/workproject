@@ -21,24 +21,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyCoustomViewActivity"></activity>
-        <activity android:name=".ScrollerTestActivity"></activity>
-        <activity android:name=".ViewTestActivity"></activity>
-        <activity android:name=".ViewDragHelperActivity"></activity>
-        <activity android:name=".ViewGroup1Activity"></activity>
-        <activity android:name=".RecycleViewActivity"></activity>
-        <activity android:name=".FlowLayoutActivity"></activity>
-        <activity android:name=".RxjavaDemoActivity"></activity>
-        <activity android:name=".DaggerTestActivity"></activity>
-        <activity android:name="com.wyyc.mvp.MvpTestActivity"></activity>
-        <activity android:name="com.wyyc.mymvpframe.ui.news.MyMvpFrameActivity"></activity>
-        <activity android:name=".DialogTestActivity"></activity>
-        <activity android:name=".TestActivity"></activity>
-        <activity android:name=".BottomSheetActivity"></activity>
-        <activity android:name=".MyViewColorActivity"></activity>
-        <activity android:name=".TableViewActivity"></activity>
-        <activity android:name=".TaoBaoActivity"></activity>
-        <activity android:name=".SplashViewActivity"></activity>
+        <activity android:name=".MyCoustomViewActivity" />
+        <activity android:name=".ScrollerTestActivity" />
+        <activity android:name=".ViewTestActivity" />
+        <activity android:name=".ViewDragHelperActivity" />
+        <activity android:name=".ViewGroup1Activity" />
+        <activity android:name=".RecycleViewActivity" />
+        <activity android:name=".FlowLayoutActivity" />
+        <activity android:name=".RxjavaDemoActivity" />
+        <activity android:name=".DaggerTestActivity" />
+        <activity android:name="com.wyyc.mvp.MvpTestActivity" />
+        <activity android:name="com.wyyc.mymvpframe.ui.news.MyMvpFrameActivity" />
+        <activity android:name=".DialogTestActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".BottomSheetActivity" />
+        <activity android:name=".MyViewColorActivity" />
+        <activity android:name=".TableViewActivity" />
+        <activity android:name=".TaoBaoActivity" />
+        <activity android:name=".SplashViewActivity" />
+        <activity android:name=".AnimFrameLayoutActivity"></activity>
     </application>
 
 </manifest>

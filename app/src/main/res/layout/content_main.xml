@@ -127,4 +127,14 @@
         android:layout_marginStart="12dp"
         android:layout_alignRight="@+id/btn_taobao"
         android:text="启动动画" />
+
+    <Button
+        android:id="@+id/btn_animframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_launght"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/btn_dragview"
+        android:text="动画框架" />
 </RelativeLayout>
